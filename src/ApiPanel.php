@@ -27,6 +27,6 @@ class ApiPanel implements IBarPanel
      */
     function getPanel()
     {
-        return "Here :-)";
+        return "List of APIs :-)";
     }
 }
