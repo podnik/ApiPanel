@@ -9,6 +9,8 @@ use Tracy\IBarPanel;
 class ApiPanel implements IBarPanel
 {
 
+    private $apis;
+
     /**
      * @inheritDoc
      */
