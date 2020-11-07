@@ -1,0 +1,26 @@
+{
+  "name": "podnik/api-panel",
+  "type": "library",
+  "description": "Tracy Extension for API Communication",
+  "keywords": ["tracy","api","extension"],
+  "homepage": "https://podnik.net",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robert Mikšík",
+      "email": "robert@miksik.cz",
+      "homepage": "https://miksik.cz",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": ">= 7.1",
+    "tracy/tracy": "^2.7"
+  },
+  "require-dev": {
+    "contributte/dev": "^0.1.0"
+  },
+  "autoload": {
+    "classmap": ["src"]
+  }
+}
