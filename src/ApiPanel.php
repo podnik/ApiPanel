@@ -8,8 +8,11 @@ use Tracy\IBarPanel;
 
 class ApiPanel implements IBarPanel
 {
+    static $apis = [];
 
-    private $apis;
+    static function registerApi($api) {
+        self::$apis[] = $api;
+    }
 
     /**
      * @inheritDoc
@@ -27,6 +30,10 @@ class ApiPanel implements IBarPanel
      */
     function getPanel()
     {
-        return "List of APIs :-)";
+        $output = "";
+        foreach (self::$apis as $api) {
+            $output .= "<li>$api</li>";
+        }
+        return "APIS: <br> $output";
     }
 }
